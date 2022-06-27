@@ -1,5 +1,5 @@
 # My-C-Data-Structure-practice
-Practice C Data structure such as Stack,Queue, Linked list, graph..
+Practice C Data structures such as Stack,Queue, Linked list, graph..
 
 [Reference]
 Programiz :https://www.programiz.com/dsa
