@@ -31,11 +31,11 @@ int main(void)
     if (LFirst(&list, &data))
     {
         if (data == 22)
-            LRemove(&list);
+            LRemove(&list); //LFirst 함수가 참조한 데이터 삭제
         while (LNext(&list, &data))
         {
             if (data == 22)
-                LRemove(&list);
+                LRemove(&list); //LNext 함수가 참조한 데이터 삭제
         }
     }
 
