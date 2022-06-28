@@ -16,7 +16,7 @@ typedef struct __ArrayList
 } ArrayList;
 
 
-typedef ArrayList List;
+typedef ArrayList List;//List는 배열 기반 리스트
 
 void ListInit(List *plist); //초기화
 void LInsert(List *plist, LData data); //데이터 저장
