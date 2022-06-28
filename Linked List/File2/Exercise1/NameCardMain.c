@@ -64,5 +64,16 @@ int main(void)
             }
         }
     }
+    printf("현재 데이터의 수: %d\n",LCount(&list));
+
+    //모든 사람의 정보 출력
+    if (LFirst(&list, &ncp))
+    {
+        ShowNameCardInfo(ncp);
+        while (LNext(&list, &ncp))
+        {
+            ShowNameCardInfo(ncp);
+        }
+    }
     return 0;
 }
