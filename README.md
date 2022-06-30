@@ -1,4 +1,5 @@
-#Study Data structures: Array,Linked List, Stack,Queue, Linked list and graph, using C language
+Study Data structures: Array,Linked List, Stack,Queue, Linked list and graph, using C language
+===========
 
 [Reference]   
 윤성우의 열혈 자료구조(Introduction to Data Structure Using C),   
