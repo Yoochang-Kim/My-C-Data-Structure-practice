@@ -33,5 +33,28 @@ int main()
         while(LNext(&list,&data))
             printf("%d ", data);
     }
-    printf("\n\n")
+    printf("\n\n");
+
+    if(LFirst(&list, &data))
+    {
+        if(data == 22)
+            LRemove(&list);
+
+        while(LNext(&list,&data))
+        {
+            if(data == 22 )
+                LRemove(&list);
+        }
+    }
+
+    printf("현재 데이터의 수 : %d\n", LCount(&list));
+    
+    if(LFirst(&list, &data))
+    {
+        printf("%d ",data);
+        while(LNext(&list,&data))
+            printf("%d ",data);
+    }
+    printf("\n\n");
+    return 0;
 }
