@@ -57,7 +57,7 @@ int LNext(List * plist, LData *pdata)
     return TRUE;/* 데이터 반환 성공 */
 }
 
-int LRemove(List *plist, LData *pdata)
+LData LRemove(List *plist)
 {
     Node * rpos = plist->cur;/* 소멸되는 노드의 주소 값을 rpos에 저장 */
     LData rdata = rpos -> data; /* 소멸되는 노드의 데이터를 rdata에 저장 */
@@ -68,4 +68,14 @@ int LRemove(List *plist, LData *pdata)
     free(rpos);/* 리스트에서 제거된 노드 소멸 */
     (plist->numOfData)--;/* 저장된 데이터의 수 하나 감소 */
     return rdata;/* 제거된 노드의 데이터 반환 */
+}
+
+int LCount(List *plist)
+{
+    plist->numOfData;
+}
+
+void SetSortRule(List * plist, int (*comp)(LData d1, LData d2))
+{
+
 }
