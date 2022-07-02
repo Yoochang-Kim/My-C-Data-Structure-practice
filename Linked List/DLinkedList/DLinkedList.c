@@ -38,7 +38,7 @@ int LFirst(List * plist, LData * pdata)
     if(plist->head->next == NULL) //더미 노드가 NULL을 가리킨다면
         return FALSE;   /* 반환할 데이터가 없다 */
 
-    plist -> head = plist ->before; /* before는 더미 노드를 가리키게함 */
+    plist->before = plist->head; /* before는 더미 노드를 가리키게함 */
     plist->cur = plist->head->next;  /* cur은 첫 번째 노드를 가리키게함 */
 
     *pdata = plist->cur->data; /* 첫 번째 노드의 데이터를 전달 */
@@ -72,7 +72,7 @@ LData LRemove(List *plist)
 
 int LCount(List *plist)
 {
-    plist->numOfData;
+    return plist->numOfData;
 }
 
 void SetSortRule(List * plist, int (*comp)(LData d1, LData d2))
