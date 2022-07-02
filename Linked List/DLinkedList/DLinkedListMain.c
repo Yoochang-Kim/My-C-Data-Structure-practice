@@ -23,6 +23,24 @@ int main(void)
             printf("%d ", data);
     }
     /* 숫자 22을 검색하여 모두 삭제 */
+    if(LFirst(&list, &data))
+    {
+        if(data == 22)
+            LRemove(&list);
+        while(LNext(&list, &data)){
+            if(data == 22){
+                LRemove(&list);
+            }
+        }
+    }
 
+    if (LFirst(&list, &data))
+    {
+        printf("\n\n");
+        printf("%d ", data);
+
+        while (LNext(&list, &data))
+            printf("%d ", data);
+    }
     /* 삭제 후 남아있는 데이터 전체 출력 */
 }
