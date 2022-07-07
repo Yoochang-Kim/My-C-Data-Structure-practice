@@ -11,7 +11,7 @@ int main()
 {
     Employee *emp;
     int i;
-
+    
     /* 리스트 생성 및 초기화 */
     List list;
     ListInit(&list);
