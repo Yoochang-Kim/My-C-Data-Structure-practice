@@ -6,6 +6,6 @@ int main(void)
     char name2[20] = "Yoochang Kim";
     printf("%c\n",name[4]);
     printf("%c\n",name2[4]);
-
+    // 
     return 0;
 }
