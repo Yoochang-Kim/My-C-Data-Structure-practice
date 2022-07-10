@@ -15,14 +15,9 @@ int main(void)
     Enqueue(&queue,5);
     Enqueue(&queue,6);
 
+    printf("The top item is : %d\n",QPeek(&queue));
     /* 데이터 꺼내기 */
-    Dequque(&queue);
-    Dequque(&queue);
-    Dequque(&queue);
-    Dequque(&queue);
-    Dequque(&queue);
-    Dequque(&queue);
-    Dequque(&queue);
-    Dequque(&queue);
+    while(!QIsEmpty(&queue))
+      printf("%d ", Dequeue(&queue));    
     return 0;
 }
