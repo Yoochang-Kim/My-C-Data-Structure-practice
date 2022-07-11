@@ -20,8 +20,9 @@ typedef struct _lQueue
 
 typedef LQueue Queue;
 
+void QueueInit(Queue * pq);
 void Enqueue(Queue *pq, Data data);
 Data Dequeue(Queue *pq);
 Data QPeek(Queue *pq);
-
+int QIsEmpty(Queue * pq);
 #endif 

@@ -16,7 +16,7 @@ int QIsEmpty(Queue * pq)
         return FALSE;
 }
 
-void Enqueu(Queue * pq, Data data)
+void Enqueue(Queue * pq, Data data)
 {
     Node * newNode = (Node*)malloc(sizeof(Node));
     newNode->next = NULL;
