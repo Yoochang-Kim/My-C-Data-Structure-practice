@@ -10,6 +10,26 @@ void InorderTraverse(BTreeNode * self)
     InorderTraverse(self->right); /* 3단계 오른쪽 서브 트리의 순회 */
 }
 
+void PreorderTraverse(BTreeNode * self)
+{
+    if(self == NULL) /* 재귀 탈출문 */
+        return;
+    printf("%d \n",self->data); /* 전위 순회이므로 루트 노드 먼저 방문 */
+    PreorderTraverse(self->left); /* 왼쪽 서브 트리 순회 */
+    PreorderTraverse(self->right); /*오른쪽 서브 트리 순회 */
+}
+
+void PostorderTraverse(BTreeNode * self)
+{
+    if(self == NULL)
+        return;
+    PostorderTraverse(self->left);
+    PostorderTraverse(self->right);
+    printf("%d \n", self->data); /* 후위 순회이므로 루트 노드 나중에 방문 */
+
+}
+
+
 int main(void)
 {
     BTreeNode * bt1 = MakeBTreeNode(); /* 노드 bt1 생성 */
