@@ -2,7 +2,7 @@
 #include "BinaryTree2.h"
 
 void ShowIntData(int data);
-
+void DeleteTree(BTreeNode * bt);
 int main(void)
 {
     BTreeNode * bt1 = MakeBTreeNode(); /* 노드 bt1 생성 */
@@ -25,11 +25,7 @@ int main(void)
     MakeRightSubTree(bt2,bt5); /* bt4를 bt2의 오른쪽 자식 노드로 */
     MakeRightSubTree(bt3,bt6); /* bt4를 bt2의 오른쪽 자식 노드로 */
 
-    PreorderTraverse(bt1, ShowIntData); 
-    printf("\n");
-    InorderTraverse(bt1, ShowIntData);
-    printf("\n");
-    PostorderTraverse(bt1, ShowIntData);
+    DeleteTree(bt1);
     printf("\n");
     return 0;
 
@@ -38,4 +34,17 @@ int main(void)
 void ShowIntData(int data)
 {
     printf("%d ", data);
+}
+
+void DeleteTree(BTreeNode * bt)
+{
+    BTreeNode * Ltmp = bt->left;
+    BTreeNode * Rtmp = bt->right;
+    if(bt==NULL) return;
+
+    DeleteTree(Ltmp);
+    DelteTree(Rtmp);
+
+    printf("del tree data: %d \n", bt->data);
+    free(bt);
 }
