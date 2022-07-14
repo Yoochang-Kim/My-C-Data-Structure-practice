@@ -3,8 +3,8 @@
 
 #define TRUE	1
 #define FALSE	0
-
-typedef int Data;
+#include "BinaryTree2.h"
+typedef BTreeNode * Data;
 
 typedef struct _node
 {
