@@ -10,7 +10,7 @@ void InsertSort(int arr[], int n)
         insData = arr[i]; //정령 대상을 insData에 저장
         
         for(j=i-1; j>=0; j--)
-        {
+        {///
             if(arr[j] > insData)
                 arr[j+1] = arr[j]; /* 비교대상 한 칸 뒤로 밀기 */
             else
