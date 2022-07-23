@@ -2,6 +2,7 @@
     "workbench.iconTheme": "material-icon-theme",
     "files.associations": {
         "*.ejs": "html",
-        "usefulheap.h": "c"
+        "usefulheap.h": "c",
+        "binarysearchtree.h": "c"
     }
 }
