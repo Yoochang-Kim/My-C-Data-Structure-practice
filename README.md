@@ -1,6 +1,6 @@
 Self Study Data structures with C       
 ===========================
-Array,Linked List, Stack,Queue, Linked list, Tree, Sort, Search and graph, Hash and Table   
+Array, Linked List, Stack, Queue, Linked list, Tree, Sort, Search, Hash, Table and graph   
    
 [Reference]   
 윤성우의 열혈 자료구조(Introduction to Data Structure Using C),   
