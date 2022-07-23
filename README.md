@@ -1,6 +1,7 @@
-Study Data structures: Array,Linked List, Stack,Queue, Linked list and graph, using C language
-===========
-
+Self Study Data structures with C       
+===========================
+Array,Linked List, Stack,Queue, Linked list, Tree, Sort, Search and graph, Hash and Table   
+   
 [Reference]   
 윤성우의 열혈 자료구조(Introduction to Data Structure Using C),   
 Programiz :https://www.programiz.com/dsa,   
