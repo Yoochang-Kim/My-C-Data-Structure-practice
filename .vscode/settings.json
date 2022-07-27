@@ -3,6 +3,7 @@
     "files.associations": {
         "*.ejs": "html",
         "usefulheap.h": "c",
-        "binarysearchtree.h": "c"
+        "binarysearchtree.h": "c",
+        "binarysearchtree2.h": "c"
     }
 }

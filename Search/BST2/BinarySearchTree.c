@@ -13,7 +13,7 @@ BSTData BSTGetNodeData(BTreeNode * bst)
 }
 
 /* BST를 대상으로 데이터 저장(노드의 생성과정 포함) */
-void BSTInsert(BTreeNode ** pRoot, BSTData data)
+void BSTInsert(BTreeNode ** pRoot, BSTData data)   
 {
     BTreeNode * pNode = NULL; //Parent node
     BTreeNode * cNode = *pRoot; //current node
