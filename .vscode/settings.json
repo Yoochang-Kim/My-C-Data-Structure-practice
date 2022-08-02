@@ -4,6 +4,7 @@
         "*.ejs": "html",
         "usefulheap.h": "c",
         "binarysearchtree.h": "c",
-        "binarysearchtree2.h": "c"
+        "binarysearchtree2.h": "c",
+        "dlinkedlist.h": "c"
     }
 }
